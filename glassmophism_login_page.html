@@ -2,25 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Glassmophism Login Page</title>
+    <title>Glassmorphism Login Page</title>
+    <!--Nunito Google font-->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <!--Tilt Neon Google Font-->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <!--<link href="assets/css/glassmophism_login_page.css" rel="stylesheet">-->
+    <link href="assets/css/glassmophism_login_page.css" rel="stylesheet">
 </head>
 <body>
-<section class="background">
-    <div class="shape"></div>
-    <div class="shape"></div>
+<section class="car">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h1 class="heading1">Travel Planner
+            <span class="heading2">Login to your account.</span>
+        </h1>
+        <div class="user">
+            <label for="username">Username</label>
+            <input id="username" placeholder="Username" type="text">
+        </div>
+        <div class="pass">
+            <label for="password">Password</label>
+            <input id="password" placeholder="Password" type="password">
+        </div>
+        <button class="sign-in"> Sign In</button>
+    </form>
 </section>
-<form>
-    <h3>Welcome To Travel Planner!
-        <span>Login to your account.</span>
-    </h3>
-
-    <label for="username">Username</label>
-    <input type="text" placeholder="Username" id="username">
-
-    <label for="password">Password</label>
-    <input type="password" placeholder="Password" id="password">
-
-    <button>Sign In</button>
-</form>
 </body>
 </html>

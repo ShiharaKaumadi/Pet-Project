@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #0e0511, #141318);
+
+}
+
+.background{
+    width: 350px;
+    height: 420px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+
+.background .shape{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.shape:first-child{
+    background: linear-gradient(#14021c, #caa0dc);
+    left: -150px;
+    top: -135px;
+
+}
+
+.shape:nth-child(2){
+    background: linear-gradient(to right, #130441, #8a8891);
+    border-radius: 50%;
+    left: 410px;
+    top: -135px;
+    rotate: 45deg;
+
+}
+.shape:nth-child(3) {
+    background: linear-gradient(#090909, #a5a4a6);
+    right: 400px;
+    bottom: -135px;
+}
+
+.shape:last-child{
+    background: linear-gradient(#272c2f, #60939f);
+    right: -150px;
+    bottom: -135px;
+
+}
+
+form{
+    height: 500px;
+    width: 460px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 50px 50px;
+    background-color: #b3b4b7;
+    backdrop-filter: blur(-180px);
+    opacity:0.5;
+    color: #1a1d20;
+    letter-spacing: 2px;
+    border: 2px solid honeydew;
+    border-radius: 12px;
+
+}
+
+.heading1{
+    color: #1a1d20;
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 45px;
+    text-align: center;
+    font-family: "Nunito",Verdana,sans-serif;
+    margin-top: 45px;
+
+}
+
+.heading2{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b3035;
+    font-family: "Tilt Neon",Verdana,sans-serif;
+    text-align: center;
+
+}
+
+.user, .pass{
+    display: block;
+    position: relative;
+    margin: 20px 30px;
+    justify-items: center;
+    align-content: center;
+    text-align: left;
+
+}
+
+label{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: "Poppins",Verdana,sans-serif;
+    color:#2b2f32;
+    background-color: #b3b4b7;
+
+}
+
+.user input, .pass input{
+    display: flex;
+    height: 35px;
+    width: 360px;
+    padding:5px 20px;
+    margin: 20px 23px;
+    border: 2px solid antiquewhite;
+    border-radius: 8px;
+    background-color: #b3b4b7;
+    color: #1a1d20;
+    font-size: 17px;
+    font-family: "Tilt Neon",Verdana,sans-serif;
+
+}
+
+.sign-in{
+    display: flex;
+    position: relative;
+    height: 55px;
+    width: 200px;
+    margin: 28px auto 20px auto;
+    background-color: #6c757d;
+    color: antiquewhite;
+    padding: 12px 12px;
+    font-size: 22px;
+    font-weight: bolder;
+    border: 2px solid antiquewhite;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: justify;
+    align-content: center;
+    justify-items: center;
+    place-content: center;
+
+}
+
