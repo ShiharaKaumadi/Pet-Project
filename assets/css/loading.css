@@ -1,0 +1,23 @@
+body{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+
+}
+
+.wrapper{
+    display:flex;
+    margin:auto;
+    align-content: center;
+    justify-items: center;
+
+}
+
+.wrapper .circle{
+
+}
+
+.wrapper .circle .one{}
+.wrapper .circle .two{}
+.wrapper .circle .three{}
+.wrapper .circle .four{}
