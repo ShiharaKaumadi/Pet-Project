@@ -33,18 +33,18 @@ body{
 
 @keyframes animation-one {
     0%{
-        width:15px;
-        height: 15px;
+        width:8px;
+        height: 8px;
         background-color: darkcyan;
     }
     50%{
-        width:18px;
-        height:18px;
+        width:9px;
+        height:9px;
         background-color: deepskyblue;
     }
     100%{
-        width:21px;
-        height:21px;
+        width:11px;
+        height:11px;
         background-color: dodgerblue;
     }
 
@@ -56,18 +56,18 @@ body{
 
 @keyframes animation-two {
     0%{
-        width:17px;
-        height: 17px;
+        width:12px;
+        height: 12px;
         background-color: lightseagreen;
     }
     50%{
-        width:20px;
-        height:20px;
+        width:14px;
+        height:14px;
         background-color: seagreen;
     }
     100%{
-        width:22px;
-        height:22px;
+        width:18px;
+        height:18px;
         background-color: limegreen;
     }
 
@@ -78,19 +78,19 @@ body{
 }
 @keyframes animation-three {
     0%{
-        width:19px;
-        height: 19px;
+        width:21px;
+        height: 21px;
         background-color: palevioletred;
     }
     50%{
-        width:22px;
-        height:22px;
+        width:23px;
+        height:23px;
         background-color: crimson;
     }
     100%{
-        width:24px;
-        height:24px;
-        background-color: maroon;
+        width:25px;
+        height:25px;
+        background-color: red;
     }
 
 }
@@ -100,19 +100,19 @@ body{
 
 @keyframes animation-four {
     0%{
-        width:22px;
+        width:26px;
         height: 22px;
         background-color: goldenrod;
     }
     50%{
-        width:24px;
-        height:24px;
+        width:28px;
+        height:28px;
         background-color: orange;
     }
     100%{
-        width:25px;
-        height:25px;
-        background-color: orangered;
+        width:30px;
+        height:30px;
+        background-color: gold;
     }
 
 }
