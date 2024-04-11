@@ -1,23 +1,118 @@
 body{
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    background-color: white;
+    padding: 0 0;
+    margin: 0 0;
 
 }
 
 .wrapper{
+    height:100vh;
+    width:100%;
     display:flex;
-    margin:auto;
-    align-content: center;
+    margin: auto;
     justify-items: center;
+    align-content: center;
+    place-content: center;
+    place-items: center;
 
 }
 
 .wrapper .circle{
+    border-radius: 50px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
 
 }
 
-.wrapper .circle .one{}
-.wrapper .circle .two{}
-.wrapper .circle .three{}
-.wrapper .circle .four{}
+.wrapper .one{
+    animation: animation-one 1s infinite backwards ;
+
+}
+
+@keyframes animation-one {
+    0%{
+        width:15px;
+        height: 15px;
+        background-color: darkcyan;
+    }
+    50%{
+        width:18px;
+        height:18px;
+        background-color: deepskyblue;
+    }
+    100%{
+        width:21px;
+        height:21px;
+        background-color: dodgerblue;
+    }
+
+}
+
+.wrapper .two{
+    animation: animation-two 3s infinite backwards ;
+}
+
+@keyframes animation-two {
+    0%{
+        width:17px;
+        height: 17px;
+        background-color: lightseagreen;
+    }
+    50%{
+        width:20px;
+        height:20px;
+        background-color: seagreen;
+    }
+    100%{
+        width:22px;
+        height:22px;
+        background-color: limegreen;
+    }
+
+}
+
+.wrapper .three{
+    animation: animation-three 5s infinite backwards ;
+}
+@keyframes animation-three {
+    0%{
+        width:19px;
+        height: 19px;
+        background-color: palevioletred;
+    }
+    50%{
+        width:22px;
+        height:22px;
+        background-color: crimson;
+    }
+    100%{
+        width:24px;
+        height:24px;
+        background-color: maroon;
+    }
+
+}
+.wrapper .four{
+    animation: animation-four 7s infinite backwards ;
+}
+
+@keyframes animation-four {
+    0%{
+        width:22px;
+        height: 22px;
+        background-color: goldenrod;
+    }
+    50%{
+        width:24px;
+        height:24px;
+        background-color: orange;
+    }
+    100%{
+        width:25px;
+        height:25px;
+        background-color: orangered;
+    }
+
+}
