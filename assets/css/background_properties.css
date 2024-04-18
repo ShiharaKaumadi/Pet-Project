@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+
+}
+.first{
+    background-image: url("https://images.pexels.com/photos/19749519/pexels-photo-19749519/free-photo-of-clouds-above-city-during-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height:100vh;
+    background-color: deepskyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+}
+
+.second{
+    height:100vh;
+    background-image: radial-gradient(rebeccapurple,white),url("https://www.pexels.com/photo/photo-of-breakfast-with-pancakes-and-a-cup-of-coffee-next-to-a-book-and-a-smartphone-16088378/");
+    background-repeat: space;
+    background-position: center;
+    background-size: cover;
+}
+
+
