@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+
+}
+
+.sea{
+    background-color:#d1d2d4;
+    display:flex;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+    margin: auto;
+    place-items: center;
+
+}
+.twister{
+    width:150px;
+    height:150px;
+    animation: twist 10s linear;
+    justify-items: center;
+    align-content: center;
+    place-items: center;
+}
+@keyframes twist {
+    from{
+        animation-delay: 0s;
+        transform: translateX(0px) scaleX(0) scaleY(0) ;
+    }
+    to{
+        transform: translateX(1000px) scaleX(2) scaleY(3) rotateY(20deg) rotateZ(20deg);
+    }
+}
+

@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffda6a;
+    height:100vh;
+    place-content: center;
+
+}
+div img{
+    width:200px;
+    height:200px;
+    padding:30px;
+    display: flex;
+    margin: auto;
+    justify-items: center;
+    align-content: center;
+    border:2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button{
+    width:350px;
+    height:60px;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: "Nunito", sans-serif;
+    background-color: orange;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 100px 600px;
+    border: transparent;
+    cursor: pointer;
+}
+
+button:hover{
+    background: black;
+    color: gold;
+
+}
+
+div img:hover{
+    transition: transform 10s ease-out  , background 10s;
+    transform: rotate(360deg) ;
+    background: red;
+}
