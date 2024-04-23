@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <title>Filter Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="assets/css/image_filter.css" rel="stylesheet">
+</head>
+<body>
+<section class="projects-section" id="projects">
+    <ul class="controls">
+        <li class="buttonsP act" data-filter="all">Home</li>
+        <li class="buttonsP" data-filter="stand-alone">Collection 1</li>
+        <li class="buttonsP" data-filter="web">Collection 2</li>
+        <li class="buttonsP" data-filter="assignments">Collection 3</li>
+        <li class="buttonsP" data-filter="ui-ux">Collection 4</li>
+        <li class="buttonsP" data-filter="leisure">Collection 5</li>
+    </ul>
+    <div class="image-container">
+        <a href="assets/image/project1.jpg" class="imageP stand-alone">
+            <img src="assets/image/project1.jpg" alt="">
+        </a>
+        <a href="assets/image/project2.png" class="imageP stand-alone">
+            <img src="assets/image/project2.png" alt="">
+        </a>
+        <a href="assets/image/project3.jpeg" class="imageP stand-alone">
+            <img src="assets/image/project3.jpeg" alt="">
+        </a>
+        <!--Web Application-->
+        <a href="assets/image/project4.jpeg" class="imageP web">
+            <img src="assets/image/project4.jpeg" alt="">
+        </a>
+        <a href="assets/image/project5.jpeg" class="imageP web">
+            <img src="assets/image/project5.jpeg" alt="">
+        </a>
+        <!--Assignments-->
+        <a href="assets/image/project6.png" class="imageP assignments">
+            <img src="assets/image/project6.png" alt="">
+        </a>
+        <a href="assets/image/project7.png" class="imageP assignments">
+            <img src="assets/image/project7.png" alt="">
+        </a>
+        <a href="assets/image/project8.jpg" class="imageP assignments">
+            <img src="assets/image/project8.jpg" alt="">
+        </a>
+        <a href="assets/image/project9.png" class="imageP assignments">
+            <img src="assets/image/project9.png" alt="">
+        </a>
+        <a href="assets/image/project10.png" class="imageP assignments">
+            <img src="assets/image/project10.png" alt="">
+        </a>
+        <a href="assets/image/project11.jpg" class="imageP assignments">
+            <img src="assets/image/project11.jpg" alt="">
+        </a>
+        <a href="assets/image/project12.jpeg" class="imageP assignments">
+            <img src="assets/image/project12.jpeg" alt="">
+        </a>
+        <a href="assets/image/project13.jpeg" class="imageP assignments">
+            <img src="assets/image/project13.jpeg" alt="">
+        </a>
+        <a href="assets/image/project14.jpeg" class="imageP assignments">
+            <img src="assets/image/project14.jpeg" alt="">
+        </a>
+        <a href="assets/image/project15.jpeg" class="imageP assignments">
+            <img src="assets/image/project15.jpeg" alt="">
+        </a>
+        <a href="assets/image/project16.jpg" class="imageP ui-ux">
+            <img src="assets/image/project16.jpg" alt="">
+        </a>
+        <a href="assets/image/project17.jpg" class="imageP ui-ux">
+            <img src="assets/image/project17.jpg" alt="">
+        </a>
+        <a href="assets/image/project18.jpg" class="imageP leisure">
+            <img src="assets/image/project18.jpg" alt="">
+        </a>
+        <a href="assets/image/project19.jpeg" class="imageP leisure">
+            <img src="assets/image/project19.jpeg" alt="">
+        </a>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $('.buttonsP').click(function(){
+
+            $(this).addClass('act').siblings().removeClass('act');
+
+            var filter = $(this).attr('data-filter')
+
+            if(filter == 'all'){
+                $('.imageP').show(400);
+            }else{
+                $('.imageP').not('.'+filter).hide(200);
+                $('.imageP').filter('.'+filter).show(400);
+            }
+
+        });
+
+        $('.projects-section').magnificPopup({
+
+            delegate:'a',
+            type:'image',
+            gallery:{
+                enabled:true
+            }
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

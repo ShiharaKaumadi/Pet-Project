@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/typography_quotes.css">
+    <title>Typography Quotes</title>
+</head>
+<body>
+<div class="quote-block">
+    <div class="poster">
+        <p class="quote"><span>Be kind, </span> work hard, stay humble, <span >Smile often, </span>stay loyal, <span> be honest,</span>travel when possible, never stop learning, <span>love always. </span></p>
+    </div>
+</div>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<script>
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", (e) => {
+        cursor.setAttribute(
+            "style",
+            "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+        );
+    });
+</script>
+</body>
+</html>

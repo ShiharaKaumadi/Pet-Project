@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s cubic-bezier(.34,1.12,.68,1.31);
+}
+
+.projects-section{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    background: midnightblue;
+
+}
+
+.projects-section .controls{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: #5a6d88;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    z-index: 999;
+    border-bottom: 10px solid #8b98e5;
+
+}
+
+.projects-section .controls .buttonsP{
+    height: 40px;
+    width:140px;
+    background: white;
+    color:#666;
+    font-size: 20px;
+    line-height:20px;
+    cursor:pointer;
+    margin:20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+    place-content: center;
+}
+
+.projects-section .controls .buttonsP.act{
+    background: coral;
+    color: white;
+}
+
+.projects-section .image-container{
+    padding-top: 80px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects-section .image-container .imageP{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border: 15px solid white;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    margin:20px;
+}
+
+.projects-section .image-container .imageP img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects-section .image-container .imageP:hover img{
+    transform: scale(1.4);
+}
+
+
+
+
+

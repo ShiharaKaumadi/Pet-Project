@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Space Grotesk", "Gill Sans", sans-serif;
+    font-weight: 300;
+    cursor: none;
+
+}
+
+.cursor {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0.03rem;
+    width: 0.5rem;
+    aspect-ratio: 1;
+    pointer-events: none;
+}
+
+.quote-block {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    color: ghostwhite;
+    background-color: black;
+
+}
+.quote-block .poster {
+    box-shadow: 0 0 0 0.3rem rgba(255, 255, 255, 0.01), 0 0 0 0.6rem rgba(255, 255, 255, 0.02), 0 0 0 0.9rem rgba(255, 255, 255, 0.03);
+    transition: 3s ease;
+    background-color: rgba(159, 151, 149, 0.6);
+    border-radius: 4rem 0;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    align-content: center;
+    justify-items: center;
+    width: clamp(100px, 60vmin, 66vh);
+    height: clamp(300px, 60vmin, 80vh);
+    padding: 3rem 4rem;
+}
+.quote-block .poster:has(.quote:hover) {
+    box-shadow: 0 0 0 0.8rem rgba(255, 183, 84, 0.96), 0 0 0 1.6rem rgba(239, 57, 57, 0.98), 0 0 0 2.4rem rgb(255, 255, 255);
+}
+.quote-block .poster:has(.quote:hover) .quote {
+    color: rgba(255, 255, 255, 0.35);
+}
+.quote-block .poster:has(.quote:hover) .quote span {
+    color: rgb(255, 255, 255);
+    display: block;
+    place-content: center;
+    justify-items: center;
+}
+
+.quote-block .poster .quote {
+    font-size: 40px;
+    text-shadow: 0 0 #2d4ebb, 0 0 #58c95e;
+    display: block;
+    place-content: center;
+}
+.quote-block .poster .quote, .container .poster .quote span {
+    transition: 50ms ease;
+}
+/*.quote-block .poster .name {
+    font-size: 45px;
+    font-weight: 500;
+    transition: 50ms ease;
+}*/
+.quote-block .poster .name:before {
+    content: "- ";
+}
